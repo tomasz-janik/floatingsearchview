@@ -88,9 +88,9 @@ public class FloatingSearchView extends FrameLayout {
 
     private final static String TAG = FloatingSearchView.class.getSimpleName();
     //The CardView's top or bottom height used for its shadow
-    private final static int CARD_VIEW_TOP_BOTTOM_SHADOW_HEIGHT = 3;
+    private final static int CARD_VIEW_TOP_BOTTOM_SHADOW_HEIGHT = 0;
     //The CardView's (default) corner radius height
-    private final static int CARD_VIEW_CORNERS_HEIGHT = 2;
+    private final static int CARD_VIEW_CORNERS_HEIGHT = 0;
     private final static int CARD_VIEW_CORNERS_AND_TOP_BOTTOM_SHADOW_HEIGHT =
             CARD_VIEW_TOP_BOTTOM_SHADOW_HEIGHT + CARD_VIEW_CORNERS_HEIGHT;
 
