@@ -890,6 +890,12 @@ public class FloatingSearchView extends FrameLayout {
         }
     }
 
+    public void setText(String text){
+        if (mSearchInput != null){
+            mSearchInput.setText(text);
+        }
+    }
+    
     /**
      * Sets the color of the search divider that
      * divides the search section from the suggestions.
