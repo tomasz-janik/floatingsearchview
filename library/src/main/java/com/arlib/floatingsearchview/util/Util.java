@@ -50,7 +50,7 @@ public class Util {
                 InputMethodManager inputMethodManager = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
                 inputMethodManager.showSoftInput(editText, InputMethodManager.SHOW_FORCED);
             }
-        }, 100);
+        }, 0);
     }
 
     public static void closeSoftKeyboard(Activity activity) {
