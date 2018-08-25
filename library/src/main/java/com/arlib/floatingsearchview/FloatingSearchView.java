@@ -33,6 +33,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.support.annotation.IntDef;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewCompat;
@@ -600,6 +601,7 @@ public class FloatingSearchView extends FrameLayout {
             @Override
             public void onClick(View v) {
                 mSearchInput.setText("");
+
                 if (mOnClearSearchActionListener != null) {
                     mOnClearSearchActionListener.onClearSearchClicked();
                 }
@@ -895,6 +897,14 @@ public class FloatingSearchView extends FrameLayout {
             mSearchInput.setText(text);
             mSearchInput.setSelection(text.length());
         }
+    }
+
+    @Nullable
+    public String getText(){
+        if (mSearchInput != null){
+            return mSearchInput.getText().toString();
+        }
+        return null;
     }
 
     /**
